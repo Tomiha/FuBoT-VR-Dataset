@@ -1,0 +1,22 @@
+{
+  "game_id": "BeatSaber",
+  "sample_id": 4,
+  "source_file": "beatsaber\\beatsaber_4.bvh",
+  "sample_rate": 30,
+  "participant_name": "Thomas",
+  "num_frames": 5469,
+  "rokoko_take": "Campaign05",
+  "rokoko_profile": {
+    "Name": "Thomas_01",
+    "BodyType": 0,
+    "TotalHeight": 184.0,
+    "FootLength": 27.0,
+    "ArmSpan": 196.0,
+    "ShoulderHeight": 153.0,
+    "ShoulderWidth": 43.0,
+    "PelvisHeight": 106.0,
+    "PelvisWidth": 23.0,
+    "KneeHeight": 53.0,
+    "ManusLength": 50.0
+  }
+}
