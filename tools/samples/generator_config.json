@@ -1,0 +1,31 @@
+{
+    "training":{
+        "output_features":[
+            ["Hips", "", ["pos_xyz", "rot_wxyz"]],
+            ["Spine", "", ["rot_wxyz"]],
+            ["Chest", "", ["rot_wxyz"]],
+            ["UpperChest", "", ["rot_wxyz"]],
+            ["Neck", "", ["rot_wxyz"]],
+            ["Head", "", ["rot_wxyz"]],
+            ["LeftShoulder", "", ["rot_wxyz"]],
+            ["LeftUpperArm", "", ["rot_wxyz"]],
+            ["LeftLowerArm", "", ["rot_wxyz"]],
+            ["LeftHand", "", ["rot_wxyz"]],
+            ["RightShoulder", "", ["rot_wxyz"]],
+            ["RightUpperArm", "", ["rot_wxyz"]],
+            ["RightLowerArm", "", ["rot_wxyz"]],
+            ["RightHand", "", ["rot_wxyz"]],
+            ["LeftUpperLeg", "", ["rot_wxyz"]],
+            ["LeftLowerLeg", "", ["rot_wxyz"]],
+            ["LeftFoot", "", ["rot_wxyz"]],
+            ["LeftToes", "", ["rot_wxyz"]],
+            ["RightUpperLeg", "", ["rot_wxyz"]],
+            ["RightLowerLeg", "", ["rot_wxyz"]],
+            ["RightFoot", "", ["rot_wxyz"]],
+            ["RightToes", "", ["rot_wxyz"]]
+        ],
+        "input_features":[
+
+        ]
+    }
+}
