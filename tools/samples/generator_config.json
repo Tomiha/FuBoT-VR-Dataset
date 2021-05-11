@@ -1,4 +1,16 @@
 {
+    "fubot_root":"../../",
+    "output_root":"../Samples/output",
+    "output_name":"dataset_6p",
+
+    "split":{
+        "categories":["train", "val", "test"],
+        "ratios":[0.65, 0.25, 0.10],
+        "min_chunk_size":30,
+        "max_chunk_size":300,
+        "seed":0
+    },
+
     "training":{
         "input_features":[
             ["Head", "",            ["pos[xyz]_w", "qrot[wxyz]_w"]],
