@@ -1,0 +1,45 @@
+{
+    "fubot_root":"../../",
+    "output_root":"output",
+    "output_name":"dataset_3p",
+
+    "split":{
+        "categories":["train", "val", "test"],
+        "ratios":[0.70, 0.20, 0.10],
+        "min_chunk_size":30,
+        "max_chunk_size":900,
+        "seed":1234
+    },
+
+    "training":{
+        "input_features":[
+            ["Head", "",            ["pos[xyz]_w", "qrot[wxyz]_w"]],
+            ["LeftHand", "",        ["pos[xyz]_w", "qrot[wxyz]_w"]],
+            ["RightHand", "",       ["pos[xyz]_w", "qrot[wxyz]_w"]]
+        ],
+        "output_features":[
+            ["Hips", "",            ["pos[xyz]_l", "qrot[wxyz]_l"]],
+            ["Spine", "",           ["qrot[wxyz]_l"]],
+            ["Chest", "",           ["qrot[wxyz]_l"]],
+            ["UpperChest", "",      ["qrot[wxyz]_l"]],
+            ["Neck", "",            ["qrot[wxyz]_l"]],
+            ["Head", "",            ["qrot[wxyz]_l"]],
+            ["LeftShoulder", "",    ["qrot[wxyz]_l"]],
+            ["LeftUpperArm", "",    ["qrot[wxyz]_l"]],
+            ["LeftLowerArm", "",    ["qrot[wxyz]_l"]],
+            ["LeftHand", "",        ["qrot[wxyz]_l"]],
+            ["RightShoulder", "",   ["qrot[wxyz]_l"]],
+            ["RightUpperArm", "",   ["qrot[wxyz]_l"]],
+            ["RightLowerArm", "",   ["qrot[wxyz]_l"]],
+            ["RightHand", "",       ["qrot[wxyz]_l"]],
+            ["LeftUpperLeg", "",    ["qrot[wxyz]_l"]],
+            ["LeftLowerLeg", "",    ["qrot[wxyz]_l"]],
+            ["LeftFoot", "",        ["qrot[wxyz]_l"]],
+            ["LeftToes", "",        ["qrot[wxyz]_l"]],
+            ["RightUpperLeg", "",   ["qrot[wxyz]_l"]],
+            ["RightLowerLeg", "",   ["qrot[wxyz]_l"]],
+            ["RightFoot", "",       ["qrot[wxyz]_l"]],
+            ["RightToes", "",       ["qrot[wxyz]_l"]]
+        ]
+    }
+}

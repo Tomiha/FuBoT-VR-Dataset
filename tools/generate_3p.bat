@@ -1,1 +1,1 @@
-python fubot_generator.py samples/config_default3p.json
+python fubot_generator.py config_default3p.json
