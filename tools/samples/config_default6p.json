@@ -1,6 +1,6 @@
 {
     "fubot_root":"../../",
-    "output_root":"../Samples/output",
+    "output_root":"output",
     "output_name":"dataset_6p",
 
     "split":{
