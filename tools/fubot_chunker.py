@@ -81,7 +81,7 @@ def split_source_file(split_params):
             if split_cat in split_cat_counter:
                 split_cat_counter[split_cat] += 1
             else:
-                split_cat_counter[split_cat] = 0
+                split_cat_counter[split_cat] = 1
             
             filepath = os.path.join(output_root, split_cat, 'bvh')
             os.makedirs(filepath, exist_ok=True)
@@ -225,7 +225,7 @@ def chunk_dataset(config:fubot_config):
     ds_meta['length'] = str(datetime.timedelta(seconds=ds_meta['total_frames']['total']/ds_meta['sample_rate']))
 
     #Save DS Meta
-    with open(os.path.join(sp['output_root'], config.params['output_name'] + '.json'), 'w') as f:
+    with open(os.path.join(sp['output_root'], config.params['output_name'] + '_meta.json'), 'w') as f:
         json.dump(ds_meta, f, indent=2)
 
 if __name__ == "__main__":

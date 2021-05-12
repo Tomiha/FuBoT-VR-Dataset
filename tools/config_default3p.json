@@ -1,5 +1,5 @@
 {
-    "fubot_root":"../../",
+    "fubot_root":"../",
     "output_root":"output",
     "output_name":"dataset_3p",
 

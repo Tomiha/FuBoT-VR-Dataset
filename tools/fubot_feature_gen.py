@@ -12,7 +12,7 @@ def generate_trainingset(config: fubot_config):
     ds_root = os.path.join(input_root, config.params['output_name'])
     
     #parse DS Metafile
-    ds_meta_fp = os.path.join(ds_root, config.params['output_name']+'.json')
+    ds_meta_fp = os.path.join(ds_root, config.params['output_name']+'_meta.json')
     with open(ds_meta_fp) as f:
         ds_meta = json.loads(f.read())
 
