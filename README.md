@@ -36,7 +36,7 @@ Depending on the use-case, the FuBoT-VR dataset can be further split up into sma
 
 ## [TOOL] Subset Generator
 
-Next to the motion data, some tools are available for processing the data, one of these is a tool to split up the FuBoT-VR source motion into smaller chunks and randomly distribute these into different subsets (training, validation and testing). There is also the option to generate machine learning input and outputs.
+Next to the motion data, some tools are available for processing the data. One of these is a tool to split up the FuBoT-VR source motion into smaller chunks and randomly distribute these into different subsets (training, validation and testing). There is also the option to generate machine learning input and outputs.
 A configuration file is required to use this tool, some examples of these configuration files can be found in the tools folder.
 
 Running the tool with a given configuration file:
