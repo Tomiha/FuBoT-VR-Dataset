@@ -66,6 +66,7 @@ class bvh_skeleton:
         self.root = None
         self.nodes = OrderedDict()
         self.nodes_flat = []
+        self.num_nodes = -1
         self.fp_bvh = bvh_fp
         self.bvh:Bvh = None
 
@@ -105,6 +106,7 @@ class bvh_skeleton:
                 self.root = new_node
 
         self.nodes_flat = list(self.nodes.values())
+        self.num_nodes = len(self.nodes_flat)
 
     def __convertToUnityPos(self, v, y_up = True):
         if y_up:
@@ -148,6 +150,17 @@ class bvh_skeleton:
             n.SetLocalRotation(q)
 
         self.root.CalculateWorld()
+
+    def extract_positions(self, local:bool):
+        out_arr = np.empty((self.num_nodes, 3))
+        for idx, n in enumerate(self.nodes_flat):
+            if local:
+                out_arr[idx:] = n.local_position
+            else:
+                out_arr[idx:] = n.world_position
+
+        return out_arr
+
 
     def extract_features(self, config:fubot_config):
         #Input Features

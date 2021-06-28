@@ -2,6 +2,26 @@
     "fubot_root":"../",
     "output_root":"output",
     "output_name":"dataset_3p",
+    "additional_sources_only":1,
+
+    "additional_sources":{
+        "laforge":{
+            "root":"../../ubisoft-laforge-animation-dataset/output/BVH/",
+            "joint_remap":[
+                ["Spine1","Chest"],
+                ["Spine2","UpperChest"],
+                ["LeftArm","LeftUpperArm"],
+                ["LeftForeArm","LeftLowerArm"],
+                ["RightArm","RightUpperArm"],
+                ["RightForeArm","RightLowerArm"],
+                ["LeftUpLeg","LeftUpperLeg"],
+                ["LeftLeg","LeftLowerLeg"],
+                ["RighUpLeg","RighUpperLeg"],
+                ["RightLeg","RightLowerLeg"]
+            ]
+
+        }
+    },
 
     "split":{
         "categories":["train", "val", "test"],
